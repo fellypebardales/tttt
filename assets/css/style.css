@@ -1,0 +1,361 @@
+/*CONFIGURAÇÕES GERAIS*/
+.disp-flex {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;}
+
+ol, ul {
+    padding: 0 !important;
+    margin: 0 !important;}
+
+a {
+    text-decoration: none !important;}
+
+    a {
+        color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+        text-decoration: underline;
+    }
+
+/*TELA 01*/
+#home {
+    margin: 0 auto;
+    max-width: 1920px;
+    height: auto;
+    padding: 20px 0 120px 0;
+    background-image: url(/assets/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;}
+
+#home .nav__item {
+    margin: 0 15px;}
+
+#home .nav__link {
+    font-family: 'Iceland';
+    color: var(--cor-grey2);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;}
+
+#home ul > li > a:hover {
+    font-weight: 600;}
+
+#home .mobile__menu-icon, .mobile__menu {
+    display: none;}
+
+/* figure > img {}
+
+nav {
+    width: 70%;}
+
+nav > ul{
+    width: 70%;}
+
+ul > li > a {
+    font-family: 'Iceland';
+    color: var(--cor-grey2);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;}
+
+ul > li > a:hover {
+    font-weight: 600;} */
+
+#home main {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;}
+
+#home h1 {
+    font-family: 'Iceland';
+    font-weight: 400;
+    font-size: 92px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--cor-grey2);}
+
+#home main p {
+    font-family: 'Actor';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--cor-grey2);}
+
+#home .buttons {
+    text-align: center;}
+
+#home button {
+    height: 46px;
+    width: 180px;
+    color: var(--cor-grey2);
+    margin: 10px;
+    font-family: 'Iceland';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+    border: none;}
+
+#home .active {
+    background-color: var(--cor-secundaria);}
+
+#home .inactive {
+    background-color: var(--cor-grey1);}
+
+#home .inactive:hover,
+#home .active:hover {
+    border: 2px solid var(--cor-grey2);}
+
+#home main > section {
+    margin-top: 70px;}
+
+#home h3 {
+    font-family: 'Iceland';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 25px;
+    color: var(--cor-grey2);}
+
+#home section > ul > li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    transition: .5s;
+    cursor: pointer;}
+
+#home section > ul > li:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);}
+
+#home section > ul > li img {
+    width: 100%;
+}
+
+#home section > ul > li p {
+    position: absolute;
+    z-index: 5;
+    font-family: 'Darker Grotesque';
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0 !important;
+    color: var(--cor-grey2);
+    background: #8e0000b0;
+    padding: 5px 10px;
+}
+
+/* EPISODES */
+#episodes {
+    height: auto;
+    background-image: url(/assets/images/bg-episodios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 30px;}
+
+#episodes > .disp-flex {
+    align-items: flex-start;
+    justify-content: space-around;}
+
+#episodes .posts > h2 {
+    font-family: 'Iceland';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 78px;
+    color: var(--cor-grey2);
+    margin-bottom: 80px;}
+
+#episodes .posts > p {
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: justify;
+    color: var(--cor-grey2);}
+
+#episodes .episodes-list::-webkit-scrollbar {
+    border-radius: 20px;
+    width: 12px;}
+  
+#episodes .episodes-list::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: var(--cor-secundaria);}
+  
+#episodes .episodes-list::-webkit-scrollbar-thumb {
+    background-color: var(--cor-grey2);
+    border-radius: 20px;
+    border: 3px solid var(--cor-secundaria);}
+
+#episodes .form-select {
+    width: 200px;
+    margin-bottom: 10px;
+    color: var(--cor-grey1);
+    font-weight: 500;
+    background-color: #ffffffea;}
+
+/*LIST EPISODES*/
+#episodes .hide-temp {
+    display: none;}
+
+#episodes .episodes-list {
+    margin: 0 auto;
+    height: 800px;
+    overflow: auto;}
+    
+#episodes .card {
+    background-color: #ffffffcc;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 195px;
+    padding: 17px;
+    margin: 0 10px 20px 0;}
+
+#episodes .box-video {
+    width: 40% !important;
+    position: relative;
+    overflow: hidden;}
+
+#episodes .box-video img{
+    height: 100%;}
+
+#episodes .img-ep {
+    width: 100%;
+    object-fit: cover;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;}
+
+#episodes a .icon-play {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px; 
+    z-index: 2;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;}
+
+#episodes .img-ep:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);}
+
+#episodes a .icon-play:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);}
+
+#episodes .card-body {
+    padding: 0 !important;}
+
+#episodes .card-body h4 {
+    font-family: 'Darker Grotesque';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    color: var(--cor-grey3);
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;}
+
+#episodes .card-body p {
+    font-family: 'Darker Grotesque';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--cor-grey3);
+    font-weight: 500;
+    margin-bottom: 10px;
+    min-height: 88px;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;}
+
+/* FOOTER */
+#footer {
+    height: auto;
+    text-align: center;
+    background-image: linear-gradient(180deg, #000000 30%, #950202 289.06%);
+    padding: 50px 0 30px;}
+
+#footer > figure > img {
+    height: 140px;
+    width: 140px;
+}
+
+#footer .disp-flex {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#footer h4 {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--cor-grey2);
+    margin-top: 20px;}
+
+@media screen and (max-width: 992px) {
+    /* EPISODES */
+    #episodes .posts > h2 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 50px;}
+
+    #episodes .posts > p {
+        font-size: 18px;
+        line-height: 24px;}
+
+    #episodes .episodes-list {
+    margin: 0 auto;
+    height: 600px;
+    overflow: auto;
+}
+    }
+
+@media screen and (max-width: 730px) {
+    /* HOME */
+    #home .nav__bar {
+        padding: 1.5rem 4rem; }
+    #home .login__button, .nav__item {
+        display: none;  }
+    #home .mobile__menu-icon {
+        display: block;   }
+    #home .mobile__menu-icon button {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;}
+    #home .mobile__menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;}
+    #home .mobile__menu .nav__item {
+        display: block;
+        padding: 1.2rem;}
+    #home .mobile__menu .login__button {
+        display: block;
+        padding: 1rem 0;
+        width: 100%;}
+    #home .open {
+        display: block;}}
